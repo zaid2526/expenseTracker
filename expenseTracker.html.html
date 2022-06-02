@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>expenseTracker</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+    </header>
+    <section id="section">
+        <h1></h1>
+        <form id="my-form" onsubmit="return false">
+            <p id="msg"></p>
+            <label for="expense" class="label" >Expense</label>
+            <input type="text" id="expense" placeholder="Your Expense" >
+            <label for="email"  class="label" >Expense Description</label>
+            <input type="text" id="description"  placeholder="Description" >
+            <label for="category"  class="label" >Category</label>
+            <select name="cars" id="category">
+                <option value="movie">Movie</option>
+                <option value="food">Food</option>
+                <option value="travel">Travel</option>
+                <option value="donate">Donate</option>
+                <option value="snack">Snacks</option>
+            </select>
+
+            <input id='btn' type="button" value="Submit" >
+            
+        </form>
+        <p id="demo"></p>
+        <ul id="expenses" class="item-group">
+        </ul>
+        
+    </section>
+    
+    <script src="expenseTracker.js"></script>
+    
+</body>
+</html>
